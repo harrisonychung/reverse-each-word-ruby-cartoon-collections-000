@@ -1,7 +1,8 @@
-sentence = "My name is Harrison"
 def reverse_each_word (sentence)
-  reverse_each_word.each do |sentence|
-    sentence.reverse
+  sentence = sentence.split(" ")
+  reversed_sentence = []
+  sentence.collect do |word|
+    reversed_sentence << word.reverse
   end
-
-reverse_each_word.collect { |sentence.reverse|}
+  reversed_sentence.join (" ")
+end
